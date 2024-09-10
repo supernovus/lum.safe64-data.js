@@ -4,10 +4,10 @@ const plan = 8;
 
 const t = require('@lumjs/tests').new({module, plan});
 
-const {lib,UBJ,PHP,JSX,JSN} = require('./inc/common');
+const {profile,UBJ,PHP,JSX,JSN} = require('./inc/common');
 const d = require('./inc/basics');
 
-const i = new lib({format: UBJ});
+const i = new profile.all({format: UBJ});
 
 t.is(i.encode(d.o1), d.o1_ubj, 'encodeData(obj)');
 t.is(i.encode(d.o1, {format: JSN}), d.o1_json, 'encodeData(:format<JSON>)');

@@ -1,12 +1,24 @@
 "use strict";
 
-const lib = require('../../lib');
+const LIB = '../../lib/';
+const PROF = LIB+'profiles/';
+const {FORMAT} = require(LIB+'common');
 
-module.exports =
+exports = module.exports =
 {
-  lib,
-  JSN: lib.FORMAT.JSON,
-  UBJ: lib.FORMAT.UBJSON,
-  PHP: lib.FORMAT.PHP,
-  JSX: lib.FORMAT.JSOX,
+  JSN: FORMAT.JSON,
+  UBJ: FORMAT.UBJSON,
+  PHP: FORMAT.PHP,
+  JSX: FORMAT.JSOX,
+  profile:
+  {
+    core: require(LIB+'transcoder'),
+    all: require(PROF+'all'),
+    php: require(PROF+'php'),
+    bin: require(PROF+'bin'),
+    jso: require(PROF+'jso'),
+    default: require(PROF+'default'),
+  },
 }
+
+exports.profile.full = exports.profile.all;

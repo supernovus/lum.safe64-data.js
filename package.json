@@ -1,9 +1,17 @@
 {
   "name": "@lumjs/safe64-data",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
+    "./transcoder": "./lib/transcoder.js",
+    "./profiles/all": "./lib/profiles/all.js",
+    "./profiles/php": "./lib/profiles/php.js",
+    "./profiles/bin": "./lib/profiles/bin.js",
+    "./profiles/jsx": "./lib/profiles/jsx.js",
+    "./profiles/core": "./lib/transcoder.js",
+    "./profiles/full": "./lib/profiles/all.js",
+    "./profiles/default": "./lib/index.js",
     "./package.json": "./package.json"
   },
   "license": "MIT",
