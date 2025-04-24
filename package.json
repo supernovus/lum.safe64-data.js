@@ -11,7 +11,7 @@
     "./profiles/jsx": "./lib/profiles/jsx.js",
     "./profiles/core": "./lib/transcoder.js",
     "./profiles/full": "./lib/profiles/all.js",
-    "./profiles/default": "./lib/index.js",
+    "./profiles/default": "./lib/profiles/default.js",
     "./package.json": "./package.json"
   },
   "license": "MIT",
