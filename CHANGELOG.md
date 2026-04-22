@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2025-04-24 / 2026-04-22
+### Fixed
+- The `profiles/default` export was pointing at the main index file instead
+  of the actual profile definition file. Not a huge bug, but worth fixing.
+### Notes
+- The first date is when I noticed and corrected the potential issue.
+- The second date is when I actually published the new version to npm... 🤪
+
 ## [2.0.0] - 2024-09-10
 ### Added
 - A new `transcoder` module that contains the base Data64 class,
@@ -32,7 +40,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Extracted all `safe64` libraries from `@lumjs/encode` package.
 - Refactored it a lot, breaking the old API, but it's a lot better now.
 
-[Unreleased]: https://github.com/supernovus/lum.safe64-data.js/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/supernovus/lum.safe64-data.js/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/supernovus/lum.safe64-data.js/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/supernovus/lum.safe64-data.js/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/supernovus/lum.safe64-data.js/releases/tag/v1.0.0
 
